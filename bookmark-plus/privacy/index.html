@@ -1,0 +1,76 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css"><title>Bookmark+ Privacy Policy — KatachiLabs</title><link rel="canonical" href="https://katachilabs.uk/bookmark-plus/privacy/"></head><body>
+<header class="site"><div class="wrap"><a class="wordmark" href="/">Katachi<span>Labs</span></a><nav><a href="/bookmark-plus/">Bookmark+</a><a href="/bookmark-plus/privacy/">Privacy</a><a href="mailto:hello@katachilabs.uk">Contact</a></nav></div></header><main class="wrap"><p class="draft"><strong>Draft</strong> — this policy is awaiting final review.</p><h1>Bookmark+ Privacy Policy</h1>
+<p><strong>DRAFT v1 — not yet approved.</strong> Effective date: <!-- ASSUMPTION A1: effective date set to the planned launch; confirm --> 1 November 2026 · Last updated: 23 October 2026</p>
+<p>This policy explains how the Bookmark+ Chrome extension ("Bookmark+", "the extension"), made by KatachiLabs <!-- ASSUMPTION A2: publisher name "KatachiLabs" operated by David Sables as a sole trader; confirm legal name/status -->, handles your information. Published at https://katachilabs.uk/bookmark-plus/privacy/</p>
+<h2>The short version</h2>
+<ul>
+<li>Bookmark+ does <strong>not collect, transmit or sell</strong> any of your data.</li>
+<li>Everything you save — bookmarks, categories, projects and settings — is stored <strong>locally on your device</strong> in Chrome's extension storage (<code>chrome.storage.local</code>).</li>
+<li>There is <strong>no account, no server, no analytics, no advertising and no tracking</strong>.</li>
+<li>KatachiLabs never sees your bookmarks or browsing activity.</li>
+</ul>
+<h2>What data Bookmark+ handles</h2>
+<p>Bookmark+ handles only the information you choose to put into it:</p>
+<ul>
+<li>Bookmarks you save (page titles and web addresses), categories, pins, favourites and projects.</li>
+<li>Your settings (for example theme, layout and column widths) and a note of when you last made a backup.</li>
+<li>A temporary copy of your previous data when you import a backup file, so the import can be undone.</li>
+</ul>
+<p>This data is used only to show and organise your dashboard. It never leaves your device unless you export it yourself.</p>
+<h2>Where your data is stored</h2>
+<ul>
+<li><strong>Local storage only.</strong> Data is kept in <code>chrome.storage.local</code> on the computer where Bookmark+ is installed. Bookmark+ does <strong>not</strong> use Chrome Sync storage (<code>chrome.storage.sync</code>), so your data is not copied to your Google account or to other devices by the extension. <!-- ASSUMPTION A3: based on v1.0.0 source (storage.js uses chrome.storage.local only); re-check before each release --></li>
+<li><strong>Backups are yours.</strong> If you use <em>Export</em>, Bookmark+ creates a JSON file that you save wherever you choose. If you use <em>Import</em>, it reads a file you select. KatachiLabs never receives these files.</li>
+<li><strong>Removing your data.</strong> Uninstalling Bookmark+ deletes its stored data from Chrome. Any backup files you exported remain where you saved them until you delete them.</li>
+</ul>
+<h2>Permissions and why they are needed</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why Bookmark+ needs it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>storage</code></td>
+<td>Saves your bookmarks, categories, projects and settings locally on your device.</td>
+</tr>
+<tr>
+<td><code>favicon</code></td>
+<td>Shows each bookmark's website icon from Chrome's built-in icon cache, without contacting the websites or any third party. Chrome describes this as "Read the icons of the websites that you visit".</td>
+</tr>
+<tr>
+<td><code>activeTab</code></td>
+<td>When you click the toolbar button or press Alt+Shift+B, reads the title and address of the current tab so you can save it. Only that tab, only when you ask.</td>
+</tr>
+<tr>
+<td><code>search</code></td>
+<td>When you search the web from the dashboard, sends your query to <strong>your own default search engine</strong> through Chrome. That search engine's own privacy policy applies.</td>
+</tr>
+<tr>
+<td><code>bookmarks</code> (optional)</td>
+<td>Asked for only when you choose "Import Chrome bookmarks". Reads your Chrome bookmarks once to copy them into the dashboard, and is released afterwards. Bookmark+ never changes your Chrome bookmarks.</td>
+</tr>
+<tr>
+<td><code>tabs</code> (optional)</td>
+<td>Asked for only when you first use "Save all tabs". Reads the titles and addresses of tabs in the current window so you can save them as a project.</td>
+</tr>
+</tbody>
+</table>
+<p>Bookmark+ requests <strong>no host permissions</strong>, runs <strong>no remote code</strong>, and its content security policy blocks loading scripts from anywhere other than the extension itself.</p>
+<h2>Sharing and selling</h2>
+<p>We do not sell, rent, share or transfer your data to anyone. Because Bookmark+ does not collect data, there is nothing to share. Bookmark+ does not use your data for advertising, credit-worthiness or lending, or any purpose unrelated to organising your bookmarks.</p>
+<h2>Chrome Web Store Limited Use</h2>
+<p>The use of information received from Chrome APIs by Bookmark+ adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+<h2>Children</h2>
+<p>Bookmark+ is a general-purpose tool and does not knowingly collect any information from anyone, including children.</p>
+<h2>Your rights (UK GDPR)</h2>
+<p>As KatachiLabs does not hold any of your personal data from Bookmark+, there is normally nothing for us to access, correct or delete — you are in full control of the data on your device. If you have questions, contact us below. You can also complain to the UK Information Commissioner's Office (ico.org.uk). <!-- ASSUMPTION A4: UK-based publisher, UK GDPR framing --></p>
+<h2>Changes to this policy</h2>
+<p>If a future version of Bookmark+ changes how data is handled (for example an optional cloud backup), we will update this page, change the "Last updated" date and, for material changes, tell you in the extension before the change takes effect. <!-- ASSUMPTION A5: roadmap mentions Drive backup in v1.1; this policy must be revised before that ships --></p>
+<h2>Contact</h2>
+<p>Questions about this policy: <!-- ASSUMPTION A6: hello@katachilabs.uk unconfirmed as the public contact --> <a href="mailto:hello@katachilabs.uk">hello@katachilabs.uk</a></p></main><footer class="site"><div class="wrap"><p>© 2026 KatachiLabs · Security shaped by design, not disaster.</p><p><a href="/bookmark-plus/privacy/">Bookmark+ privacy policy</a> · <!-- ASSUMPTION: contact address unconfirmed --><a href="mailto:hello@katachilabs.uk">hello@katachilabs.uk</a></p></div></footer></body></html>
