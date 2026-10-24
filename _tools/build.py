@@ -142,9 +142,14 @@ page("/contact/index.html", "Contact | KatachiLabs", "How to contact KatachiLabs
 
 # privacy: copy main content byte-for-byte from the live page
 src = open(SRC_PRIVACY, encoding="utf-8").read()
-m = re.search(r'<main class="wrap">(.*?)</main>', src, re.S)
+m = re.search(r'<main[^>]*>(.*?)</main>', src, re.S)
 assert m, "main not found in live privacy page"
 inner = m.group(1)
+# Wording fix (David, 24 Oct 2026): the backup-restore button is "Restore from backup", not "Import".
+_OLD = "If you use <em>Import</em>, it reads a file you select."
+_NEW = "If you use <em>Restore from backup</em>, it reads a file you select."
+assert inner.count(_OLD) + inner.count(_NEW) == 1, "expected exactly one backup-restore sentence"
+inner = inner.replace(_OLD, _NEW)
 privacy_body = f'<main id="main" class="wrap prose">{inner}</main>'
 page("/bookmark-plus/privacy/index.html", "Bookmark+ Privacy Policy | KatachiLabs", "", "light", "privacy", privacy_body,
      extra='<link rel="canonical" href="https://katachilabs.uk/bookmark-plus/privacy/">')
