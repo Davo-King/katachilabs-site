@@ -174,7 +174,7 @@ lp = f"""<main id="main">
 <ul class="checks"><li>Import your Chrome bookmarks in one step; Bookmark+ only reads them</li><li>Back up and restore with a JSON file</li><li>Light and dark mode, with six colour themes</li><li>Undo for deletes and imports</li></ul></div>
 <hr>
 <div class="wrap sec"><div class="label">Private by design</div><h2>Your bookmarks never leave your device.</h2>
-<p class="lead" style="margin-bottom:24px">Bookmark+ has no account, no analytics, no advertising and no servers. Data is kept in Chrome's local extension storage only. Because nothing is sent anywhere, bookmarks do not sync between computers on their own: use Download backup on one and Import on the other.</p>
+<p class="lead" style="margin-bottom:24px">Bookmark+ has no account, no analytics, no advertising and no servers. Data is kept in Chrome's local extension storage only. Because nothing is sent anywhere, bookmarks do not sync between computers on their own: use Download backup on one and Restore from backup on the other.</p>
 <div class="btns"><a class="btn p" href="/bookmark-plus/privacy/">Privacy policy</a><a class="btn t" href="/labs/bookmark-plus/">See the builder view in Labs &rarr;</a></div></div>
 </main>"""
 page("/bookmark-plus/index.html", "Bookmark+ | KatachiLabs", "Bookmark+ is a calm, private bookmark dashboard for Chrome's new tab. Free, with everything stored on your device.", "light", "", lp,
