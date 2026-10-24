@@ -87,14 +87,14 @@ ICO_CODE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M1
 home = f'''<main id="main">
 <div class="wrap"><div class="hero"><div class="kicker">Independent tech studio</div>
 <h1>Security shaped by design, <em>not disaster.</em></h1>
-<p class="lead">KatachiLabs makes calm, privacy-first apps and builds a community of people who make and learn together. Consultancy will follow in time, built on the same principles.</p>
+<p class="lead">KatachiLabs makes calm, privacy-first apps and builds a community of people who make and learn together. Consultancy will follow in time, starting with AI implementation for small and medium-sized businesses.</p>
 <div class="btns"><a class="btn p" href="/bookmark-plus/">Meet Bookmark+</a><a class="btn t" href="/labs/">Join the community &rarr;</a></div></div></div>
 <hr>
 <div class="wrap sec"><div class="label">What we do</div><h2>Apps, a community, and advice in time.</h2>
 <div class="cols">
 <div class="col"><span class="n">01</span><h3>Apps</h3><p>Small, focused tools that keep your data on your device. Our first is Bookmark+, a Chrome new-tab dashboard.</p><a class="more" href="/bookmark-plus/">See Bookmark+ &rarr;</a></div>
 <div class="col"><span class="n">02</span><h3>Community</h3><p>We share what we are making and what we are learning, with people who like to build and learn together.</p><a class="more" href="/labs/">Visit Labs &rarr;</a></div>
-<div class="col"><span class="n">03</span><h3>Consultancy</h3><p>Not available yet. In time, practical advice on security, privacy, data protection and governance.</p><a class="more" href="/consultancy/">Read more &rarr;</a></div>
+<div class="col"><span class="n">03</span><h3>Consultancy</h3><p>Not available yet. In time, starting with practical help with AI implementation for small and medium-sized businesses, then privacy and data protection, and security.</p><a class="more" href="/consultancy/">Read more &rarr;</a></div>
 </div></div>
 <hr>
 <div class="wrap sec"><div class="label">Our first product</div><h2>A quieter place to keep the web you use.</h2>
@@ -115,22 +115,25 @@ page("/index.html", "KatachiLabs | Security shaped by design, not disaster",
 
 consult = f'''<main id="main"><div class="wrap">
 <div class="hero sm"><div class="kicker">Consultancy</div><h1>Coming soon. <em>Not open yet.</em></h1>
-<p class="lead">We plan to offer consultancy in time, built on the same principles as our apps. It is not available yet, and there is nothing to buy today.</p></div>
+<p class="lead">We plan to offer consultancy in time, starting with helping small and medium-sized businesses put AI to practical use. It is not open yet, and there is nothing to buy today.</p></div>
 <div class="page" style="padding-top:0">
-<div class="card soft"><h2>What to expect</h2><p>We expect consultancy to focus on practical, plain-English help in these areas:</p>
-<ul><li>Security</li><li>Privacy and data protection</li><li>Data governance</li></ul>
-<p style="margin-top:14px">This list is a direction of travel, not a service menu. Scope, availability and pricing are all to be confirmed.</p></div>
+<div class="card soft"><h2>Where we expect to start</h2><p>This is our direction of travel, in priority order:</p>
+<ol class="areas">
+<li><strong>AI implementation for small and medium-sized businesses.</strong> This is our first planned offering. In plain English, we expect to help a business work out where AI could be useful in its everyday work and put it in place sensibly. No hype, and no promises about outcomes.</li>
+<li><strong>Privacy and data protection.</strong> Practical help with data protection and data governance.</li>
+<li><strong>Security.</strong> Practical, proportionate security advice.</li>
+</ol>
+<p style="margin-top:14px">Consultancy is not open yet. Scope, availability and pricing are all to be confirmed.</p></div>
 <div class="card"><h2>Interested?</h2><p>If you would like to talk, or be told when consultancy opens, get in touch.</p>
 <div class="btns" style="margin-top:18px"><a class="btn p" href="/contact/">Get in touch</a><a class="btn t" href="/labs/">See what we are building &rarr;</a></div></div>
 </div></div></main>'''
-page("/consultancy/index.html", "Consultancy | KatachiLabs", "KatachiLabs consultancy is coming in time. Not available yet; get in touch to register interest.", "light", "consultancy", consult)
+page("/consultancy/index.html", "Consultancy | KatachiLabs", "KatachiLabs consultancy is not open yet. We expect to start with AI implementation for small and medium-sized businesses, then privacy and data protection, and security.", "light", "consultancy", consult)
 
 contact = f'''<main id="main"><div class="wrap">
 <div class="hero sm"><div class="kicker">Contact</div><h1>Say <em>hello.</em></h1>
-<p class="lead">Questions about Bookmark+, the community, or consultancy? Send us a message.</p></div>
+<p class="lead">Questions about Bookmark+, the community, or consultancy? Send us an email.</p></div>
 <div class="page" style="padding-top:0">
-<div class="card"><h2>Email</h2><p><a class="inline" href="mailto:contact-email-tbc@example.invalid"><span class="placeholder">[CONTACT EMAIL TBC]</span></a></p>
-<p style="color:var(--muted);font-size:14.5px;margin-top:10px">Placeholder: the public contact address will be added here once it is confirmed.</p></div>
+<div class="card"><h2>Email</h2><p><a class="inline" href="mailto:contact@katachilabs.uk">contact@katachilabs.uk</a></p></div>
 <div class="card soft"><h2>Good to know</h2><ul>
 <li>Bookmark+ does not collect your data, so we cannot look up or recover bookmarks for you. See the <a class="inline" href="/bookmark-plus/privacy/">privacy policy</a>.</li>
 <li>Consultancy is not open yet. Tell us what you have in mind and we will get back to you when it is.</li></ul></div>
@@ -200,7 +203,7 @@ labs = f'''<main id="main">
 <div class="vis">{pic("dashboard-dark", ALT_DARK, small=640, sizes="(max-width:900px) 100vw, 520px")}</div></div></div></section>
 
 <section style="padding-top:0"><div class="wrap"><div class="sec-label mono">02 / Build log</div><h2>Notes from the bench</h2>
-<p class="sub">A short, honest log of what we ship and learn. Full posts will land here as we write them.</p>
+<p class="sub">The build log will share real sticking points, decisions and lessons learned from building our apps.</p>
 <div class="log">
 <div class="entry"><div class="d">24 Oct 2026</div><div><h3>Bookmark+ privacy policy published</h3><p>The policy states plainly that data stays on your device in local storage, with no account and no tracking. <a class="inline" href="/bookmark-plus/privacy/" style="color:var(--accent);text-decoration:underline">Read it</a>.</p></div></div>
 <div class="entry next"><div class="d">Next</div><div><h3>Bookmark+ on the Chrome Web Store</h3><p>In progress. Date to be confirmed.</p></div></div>

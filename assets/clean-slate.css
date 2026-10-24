@@ -110,3 +110,4 @@ footer.site .l{display:flex;gap:28px;flex-wrap:wrap}footer.site a{color:var(--in
 .pills{margin-bottom:28px}
 @media(max-width:640px){.checks{grid-template-columns:1fr}.hero-shot{margin-bottom:40px}}
 @media(max-width:420px){nav{gap:13px;font-size:13.5px}nav a.c{padding:5px 11px}}
+.card ol.areas{padding-left:22px;margin-top:12px}.card ol.areas li{margin:12px 0}.card ol.areas strong{color:var(--ink)}
