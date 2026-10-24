@@ -1,0 +1,20 @@
+/* Shared design tokens: fonts, brand accents, shape. Loaded by both themes. */
+:root{
+  --font-sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --brand-indigo:#4338CA;      /* Clean Slate accent */
+  --brand-indigo-light:#6366F1;/* Midnight secondary accent */
+  --brand-teal:#2DD4BF;        /* Midnight primary accent */
+  --brand-ink:#0B1020;
+  --brand-night:#0A0F1E;
+  --radius-pill:99px;
+  --radius-card:20px;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+a{color:inherit;text-decoration:none}
+img,svg{max-width:100%}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:8px 12px;z-index:99}
+.skip:focus{left:8px;top:8px}
+.placeholder{background:#FFF4CC;color:#5B4A00;border:1px dashed #D4A800;border-radius:6px;padding:1px 8px;font-weight:600;font-size:.92em}
+.dark .placeholder,.theme-dark .placeholder{background:rgba(251,191,36,.12);color:#FCD34D;border-color:rgba(251,191,36,.5)}
